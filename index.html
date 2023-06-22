@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Konversi Suhu</title>
+</head>
+<body>
+    <div class="container">
+        <div class="temperature-converter">
+            <h1 class="title">Konversi Suhu</h1>
+            <div class="degree-type">
+                <div class="degree-field">
+                    <label for="Celsius" id="suhu">Celsius</label>
+                    <input type="number" id="inputField" />
+                </div>
+                <div class="temp-field">
+                  <textarea id="result" rows="6" cols="25" onclick="this.focus();this.select()" readonly="readonly"></textarea>
+                </div>
+            </div>   
+            <div class="InputButtonSection">
+                <button id="convert-btn">Convert</button>
+                <button id="reset-btn" onclick="document.location.reload()">Reset</button>
+                <button id="reverse-btn" onclick="revFunction()">Reverse</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
